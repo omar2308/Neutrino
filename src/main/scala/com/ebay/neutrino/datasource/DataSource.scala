@@ -18,7 +18,7 @@ class FileReader extends DataSource {
 
   override def load(): LoadBalancer = {
 
-    val results = Configuration.load("/etc/neutrino/slb.conf", "resolvers")
+    val results = Configuration.load("./slb.conf", "resolvers")
     LoadBalancer(results)
 
   }

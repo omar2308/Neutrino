@@ -48,7 +48,7 @@ object SLB extends StrictLogging {
    * @param filename
    * @return
    */
-  def apply(filename: String = "/etc/neutrino/slb.conf"): SLB =
+  def apply(filename: String = "./slb.conf"): SLB =
     new SLB(SystemConfiguration.system(filename))
 
 
